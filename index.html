@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RAVINDO | Minggu 2: Mengenal Listrik Dasar</title>
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --secondary: #ff6d00;
+      --light: #e3f2fd;
+      --dark: #01579b;
+      --danger: #d32f2f;
+      --success: #2e7d32;
+      --text: #212121;
+      --bg: #f5f9ff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(to right, var(--primary), var(--dark));
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin: 25px 0 15px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 8px;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin: 20px 0 12px;
+      color: var(--dark);
+    }
+    p, ul, ol {
+      margin-bottom: 16px;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight {
+      background-color: #fff8e1;
+      padding: 16px;
+      border-left: 4px solid var(--secondary);
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .pillar {
+      display: flex;
+      gap: 16px;
+      margin: 25px 0;
+      flex-wrap: wrap;
+    }
+    .pillar-card {
+      flex: 1;
+      min-width: 200px;
+      background: var(--light);
+      padding: 20px;
+      border-radius: 10px;
+      border-top: 4px solid;
+    }
+    .head { border-color: #2196f3; }
+    .hand { border-color: #4caf50; }
+    .heart { border-color: #f44336; }
+    .habit { border-color: #9c27b0; }
+    .pillar-card h4 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    pre {
+      background: #263238;
+      color: #eeeeee;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+    .popup {
+      background: #e8f5e9;
+      border: 1px dashed #4caf50;
+      padding: 14px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+    .popup h5 {
+      color: #2e7d32;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .story {
+      background: #f9f9f9;
+      border-left: 4px solid var(--danger);
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .story h4 {
+      color: var(--danger);
+      margin-bottom: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--dark);
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      .container { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 RAVINDO MARITIME LEARNING SYSTEM</h1>
+      <p>Semester 1: Kelistrikan Dasar Kapal</p>
+      <h2>⚡ MINGGU 2: MENGENAL LISTRIK DASAR</h2>
+      <p><em>"Listrik Itu Bukan Sihir — Ini Ilmu yang Bisa Kamu Pelajari!"</em></p>
+    </header>
+
+    <main style="padding: 25px;">
+      <section>
+        <h2>1️⃣ IDENTITAS MODUL</h2>
+        <p><strong>Semester/Level:</strong> Semester 1 - Kelistrikan Dasar Kapal<br>
+        <strong>Minggu:</strong> 2 dari 16<br>
+        <strong>Judul Modul:</strong> Mengenal Listrik Dasar<br>
+        <strong>Judul Sederhana:</strong> Apa Itu Tegangan, Arus, dan Multimeter?<br>
+        <strong>Durasi Belajar Mandiri:</strong> 8-10 jam<br>
+        <strong>Durasi Kelas:</strong> 3 jam (demo + praktik)</p>
+
+        <p><strong>Fokus Minggu Ini:</strong><br>
+        Kamu akan belajar **APA ITU** listrik, **BAGAIMANA** mengukurnya, dan **KENAPA** alat ukur itu penting.</p>
+
+        <p><strong>Prasyarat:</strong><br>
+        - Sudah baca Minggu 1 (Keselamatan)<br>
+        - Siap pegang multimeter pertama kali!</p>
+
+        <p><strong>Yang Akan Kamu Pelajari:</strong><br>
+        - Perbedaan tegangan (voltage) dan arus (current)<br>
+        - Bagian-bagian multimeter<br>
+        - Cara mengukur tegangan DC & AC dengan aman<br>
+        - Simbol listrik dasar di switchboard</p>
+      </section>
+
+      <section>
+        <h2>2️⃣ TUJUAN PEMBELAJARAN</h2>
+        <p>Setelah minggu ini, kamu <strong>HARUS BISA:</strong></p>
+
+        <h3>A. Pengetahuan (Kamu TAHU):</h3>
+        <ol>
+          <li>Menjelaskan perbedaan **tegangan (Voltage)** dan **arus (Current)** dengan analogi air</li>
+          <li>Menyebutkan 3 bagian utama multimeter</li>
+          <li>Memahami simbol **V**, **A**, **Ω**, **DC**, **AC**</li>
+          <li>Menjelaskan bahaya mengukur arus secara salah</li>
+        </ol>
+
+        <h3>B. Keterampilan (Kamu BISA):</h3>
+        <ol>
+          <li>Memegang multimeter dengan benar (tangan kering, posisi jari aman)</li>
+          <li>Mengukur tegangan baterai 12V (DC) dengan akurat</li>
+          <li>Mengukur tegangan stopkontak kapal 220V (AC) dengan prosedur aman</li>
+          <li>Membaca angka di layar multimeter dalam 5 detik</li>
+        </ol>
+
+        <h3>C. Sikap (Kamu PEDULI):</h3>
+        <ol>
+          <li>Tidak asal colok probe multimeter</li>
+          <li>Selalu pastikan range pengukuran benar sebelum ukur</li>
+          <li>Rapi menyimpan kabel multimeter setelah dipakai</li>
+        </ol>
+
+        <h3>D. Kebiasaan (Kamu RUTIN):</h3>
+        <ol>
+          <li>Sebelum ukur: cek kondisi multimeter (baterai, kabel, fuse)</li>
+          <li>Setelah ukur: matikan multimeter & simpan di tempat kering</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>3️⃣ THE 4 PILLARS OF LEARNING (HEL)</h2>
+        <div class="pillar">
+          <div class="pillar-card head">
+            <h4>🧠 HEAD (35%) - You Must UNDERSTAND</h4>
+            <p><strong>Core Concepts:</strong></p>
+            <pre>Voltage (V) = Electrical "pressure"
+Current (A) = Flow of electrons
+Resistance (Ω) = Opposition to flow
+
+Ohm’s Law: V = I × R
+
+DC = Direct Current (battery)
+AC = Alternating Current (ship power)</pre>
+
+            <div class="popup">
+              <h5>💡 POP-UP: What is a Multimeter?</h5>
+              <p>A multimeter is a handheld device that measures:</p>
+              <ul>
+                <li><strong>Voltage (V)</strong> – electrical pressure</li>
+                <li><strong>Current (A)</strong> – flow rate</li>
+                <li><strong>Resistance (Ω)</strong> – how hard it is for electricity to flow</li>
+              </ul>
+              <p>Always start with the highest range if unsure!</p>
+            </div>
+          </div>
+
+          <div class="pillar-card hand">
+            <h4>🔧 HAND (30%) - You Must BE ABLE TO DO</h4>
+            <p><strong>Hands-on Practice:</strong></p>
+            <pre>1. Identify parts:
+   • Display
+   • Dial selector
+   • COM port (black)
+   • VΩmA port (red)
+
+2. Measure DC Voltage:
+   • Set dial to "V⎓" or "20V"
+   • Red probe → red port
+   • Black probe → COM
+   • Touch probes to battery terminals
+
+3. Measure AC Voltage:
+   • Set dial to "V~" or "750V"
+   • NEVER touch metal probe tips!
+   • Use one hand only (avoid hand-to-hand path)</pre>
+
+            <div class="popup">
+              <h5>⚠️ POP-UP: Safety Reminder</h5>
+              <p>When measuring ship AC voltage (220V/440V):</p>
+              <ul>
+                <li>Wear insulated gloves</li>
+                <li>Stand on dry rubber mat</li>
+                <li>Use CAT III rated multimeter</li>
+                <li>Never measure current in parallel!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-card heart">
+            <h4>❤️ HEART (20%) - You Must CARE</h4>
+            <p><strong>Mindset:</strong></p>
+            <pre>• Electricity respects those who respect it.
+• A wrong measurement can cause arc flash.
+• Your focus protects your future.
+• Clean tools = safe work.
+• Ask if unsure — no shame in learning.</pre>
+          </div>
+
+          <div class="pillar-card habit">
+            <h4>🔁 HABIT (15%) - You Must DO IT REGULARLY</h4>
+            <p><strong>Daily Routine:</strong></p>
+            <pre>☐ Before use: Inspect multimeter cables
+☐ After use: Turn OFF and store properly
+☐ Weekly: Check battery & fuse
+☐ Always: Keep probes clean and dry</pre>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>4️⃣ MATERI INTI: LISTRIK ITU SEPERTI AIR!</h2>
+        <p>Taruna, bayangkan listrik seperti **aliran air di pipa**:</p>
+
+        <div class="highlight">
+          <p><strong>TEGANGAN (Voltage) = Tekanan Air</strong><br>
+          Contoh: Pompa air di rumah. Semakin tinggi tekanan, semakin kuat air keluar.<br>
+          Di kapal: Baterai = 12V (tekanan kecil), Generator = 440V (tekanan besar!)</p>
+        </div>
+
+        <div class="highlight">
+          <p><strong>ARUS (Current) = Jumlah Air yang Mengalir</strong><br>
+          Contoh: Selang kecil vs selang pemadam kebakaran.<br>
+          Arus kecil = cukup nyalakan lampu. Arus besar = bisa nyalakan mesin utama.</p>
+        </div>
+
+        <div class="highlight">
+          <p><strong>HAMBATAN (Resistance) = Sempitnya Pipa</strong><br>
+          Pipa sempit = air susah lewat = hambatan besar.<br>
+          Kabel rusak = hambatan naik = panas = bahaya kebakaran!</p>
+        </div>
+
+        <h3>Bagaimana Multimeter Bekerja?</h3>
+        <p>Multimeter adalah **"pengukur tekanan dan aliran listrik"**. Ada 3 fungsi utama:</p>
+        <ol>
+          <li><strong>Voltmeter</strong> → ukur tekanan (dipasang PARALEL)</li>
+          <li><strong>Ammeter</strong> → ukur aliran (dipasang SERI — hati-hati!)</li>
+          <li><strong>Ohmmeter</strong> → ukur hambatan (HANYA saat listrik MATI!)</li>
+        </ol>
+
+        <div class="story">
+          <h4>❤️ Cerita Nyata: Multimeter Meledak di Tangan!</h4>
+          <p><strong>Kejadian:</strong><br>
+          Seorang taruna baru ingin ukur arus motor pompa. Dia colok multimeter ke **stopkontak langsung** (paralel), padahal harus seri. Terjadi **konsleting besar** — multimeter meledak, tangan terbakar ringan.</p>
+          <p><strong>Penyebab:</strong><br>
+          - Salah pasang probe<br>
+          - Tidak baca manual<br>
+          - Terburu-buru</p>
+          <p><strong>Pelajaran:</strong><br>
+          <strong>Jangan pernah ukur arus (A) di stopkontak!</strong><br>
+          Arus hanya diukur di rangkaian yang sedang bekerja, dengan cara khusus.</p>
+        </div>
+
+        <h3>Simbol yang Harus Kamu Kenali di Switchboard:</h3>
+        <pre>V  = Volt (Tegangan)
+A  = Ampere (Arus)
+Ω  = Ohm (Hambatan)
+⎓  = DC (Direct Current)
+~  = AC (Alternating Current)
+ON/OFF = Saklar</pre>
+
+        <p><strong>Latihan Visual:</strong><br>
+        Lihat panel listrik di kelas. Cari simbol-simbol di atas. Catat di buku!</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 RAVINDO MARITIME LEARNING SYSTEM | Untuk Taruna yang Ingin Jadi Ahli Listrik Kapal</p>
+      <p>⚓ Listrik Bisa Dikuasai — Asal Dimulai dari Dasar! 🔥</p>
+    </footer>
+  </div>
+</body>
+</html>
+
